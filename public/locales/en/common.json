@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Home",
+    "soc": "Open-SOC",
+    "forensics": "Open-Forensics",
+    "progress": "Progress",
+    "settings": "Settings",
+    "language": "Language",
+    "darkMode": "Dark Mode"
+  },
+  "home": {
+    "title": "CyberTraining Platform",
+    "subtitle": "Train for SOC and DFIR shifts in a realistic environment",
+    "socTitle": "Open-SOC",
+    "socDesc": "Simulate SOC shifts: SIEM alert analysis, phishing, network traffic, incident investigation, malware analysis, SIGMA rules and Threat Intelligence.",
+    "forensicsTitle": "Open-Forensics",
+    "forensicsDesc": "Practice DFIR: memory analysis, disk analysis, logs, forensic timeline, network captures, browser artifacts and Windows registry.",
+    "startTraining": "Start Training",
+    "scenarios": "scenarios",
+    "completedScenarios": "Completed Scenarios",
+    "totalScore": "Total Score",
+    "bestStreak": "Best Streak"
+  },
+  "scenario": {
+    "difficulty": "Difficulty",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "estimatedTime": "Estimated Time",
+    "minutes": "min",
+    "start": "Start",
+    "submit": "Submit",
+    "next": "Next",
+    "previous": "Previous",
+    "evidence": "Evidence",
+    "questions": "Questions",
+    "results": "Results",
+    "score": "Score",
+    "timeSpent": "Time Spent",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "explanation": "Explanation",
+    "tryAgain": "Try Again",
+    "backToDashboard": "Back to Dashboard",
+    "congratulations": "Congratulations!",
+    "keepPracticing": "Keep Practicing!",
+    "grade": "Grade",
+    "hint": "Hint",
+    "mitreTechniques": "MITRE ATT&CK Techniques"
+  },
+  "progress": {
+    "title": "Your Progress",
+    "completed": "Completed",
+    "total": "Total",
+    "averageScore": "Average Score",
+    "resetProgress": "Reset Progress",
+    "resetConfirm": "Are you sure you want to reset your progress?"
+  }
+}

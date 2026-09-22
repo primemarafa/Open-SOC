@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "soc": "Open-SOC",
+    "forensics": "Open-Forensics",
+    "progress": "Progression",
+    "settings": "Paramètres",
+    "language": "Langue",
+    "darkMode": "Mode sombre"
+  },
+  "home": {
+    "title": "CyberTraining Platform",
+    "subtitle": "Entraînez-vous aux shifts SOC et DFIR de manière réaliste",
+    "socTitle": "Open-SOC",
+    "socDesc": "Simulez des shifts SOC : analyse d'alertes SIEM, phishing, trafic réseau, investigation d'incidents, analyse de malware, règles SIGMA et Threat Intelligence.",
+    "forensicsTitle": "Open-Forensics",
+    "forensicsDesc": "Entraînez-vous au DFIR : analyse mémoire, disque, logs, timeline forensique, captures réseau, artefacts navigateur et registre Windows.",
+    "startTraining": "Commencer l'entraînement",
+    "scenarios": "scénarios",
+    "completedScenarios": "Scénarios complétés",
+    "totalScore": "Score total",
+    "bestStreak": "Meilleure série"
+  },
+  "scenario": {
+    "difficulty": "Difficulté",
+    "easy": "Facile",
+    "medium": "Moyen",
+    "hard": "Difficile",
+    "estimatedTime": "Temps estimé",
+    "minutes": "min",
+    "start": "Démarrer",
+    "submit": "Valider",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "evidence": "Évidences",
+    "questions": "Questions",
+    "results": "Résultats",
+    "score": "Score",
+    "timeSpent": "Temps passé",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "explanation": "Explication",
+    "tryAgain": "Réessayer",
+    "backToDashboard": "Retour au tableau de bord",
+    "congratulations": "Félicitations !",
+    "keepPracticing": "Continuez à pratiquer !",
+    "grade": "Note",
+    "hint": "Indice",
+    "mitreTechniques": "Techniques MITRE ATT&CK"
+  },
+  "progress": {
+    "title": "Votre Progression",
+    "completed": "Complétés",
+    "total": "Total",
+    "averageScore": "Score moyen",
+    "resetProgress": "Réinitialiser la progression",
+    "resetConfirm": "Êtes-vous sûr de vouloir réinitialiser votre progression ?"
+  }
+}

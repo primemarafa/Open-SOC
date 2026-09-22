@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --color-cyber-primary: #00ff88;
+  --color-cyber-secondary: #00ccff;
+  --color-cyber-danger: #ff4444;
+  --color-cyber-warning: #ffbb33;
+  --color-cyber-bg: #0a0e17;
+  --color-cyber-surface: #111827;
+  --color-cyber-border: #1e293b;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cyber-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-cyber-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Log viewer styling */
+.log-line:hover {
+  background-color: rgba(0, 255, 136, 0.05);
+}
+
+/* Glow effects */
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+}
+.glow-blue {
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.15);
+}
+.glow-red {
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.15);
+}
