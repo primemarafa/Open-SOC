@@ -6,9 +6,11 @@ import { incidentInvestigationScenario } from './scenarios/incident-investigatio
 import { malwareAnalysisScenario } from './scenarios/malware-analysis';
 import { sigmaRulesScenario } from './scenarios/sigma-rules';
 import { threatIntelScenario } from './scenarios/threat-intel';
+import { aitmPhishingScenario } from './scenarios/aitm-phishing';
 
 export const socScenarios: SOCScenario[] = [
   siemAlertTriageScenario,
+  aitmPhishingScenario,
   phishingAnalysisScenario,
   networkTrafficScenario,
   incidentInvestigationScenario,

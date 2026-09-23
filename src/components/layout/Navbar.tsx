@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ShieldAlert, Globe, Moon, Sun, Menu, X, RotateCcw } from 'lucide-react';
+import { ShieldAlert, Globe, Moon, Sun, Menu, X, RotateCcw, ExternalLink } from 'lucide-react';
 import { useSettingsStore } from '../../stores/useSettingsStore';
 import { useProgressStore } from '../../stores/useProgressStore';
+import { socScenarios } from '../../data/soc';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation(['common', 'soc']);
@@ -46,7 +47,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Nav Items */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-5">
             <Link
               to="/"
               className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
@@ -55,8 +56,21 @@ export default function Navbar() {
                   : 'text-slate-300 hover:text-emerald-300 hover:bg-slate-800/50'
               }`}
             >
-              Scénarios ({7})
+              Scénarios ({socScenarios.length})
             </Link>
+
+            {/* Cross-Platform Switcher to Open-Forensics */}
+            <a
+              href="https://primemarafa.github.io/Open-Forensics/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 text-xs font-mono font-bold transition-all shadow-[0_0_10px_rgba(6,182,212,0.15)]"
+              title="Passer au Laboratoire d'Investigation DFIR"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+              <span>Lab DFIR</span>
+              <ExternalLink className="w-3 h-3 ml-0.5 opacity-70" />
+            </a>
 
             <div className="flex items-center gap-4 text-xs font-mono text-slate-400 border-l border-slate-800 pl-4">
               <div>
@@ -103,6 +117,14 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <div className="flex md:hidden items-center space-x-2">
+            <a
+              href="https://primemarafa.github.io/Open-Forensics/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-2 py-1 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 text-xs font-mono font-bold"
+            >
+              Lab DFIR ↗
+            </a>
             <button 
               onClick={toggleLanguage}
               className="px-2 py-1 text-slate-300 text-xs font-mono"
@@ -132,8 +154,16 @@ export default function Navbar() {
             onClick={() => setIsMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-md text-base font-medium text-emerald-400 bg-slate-800"
           >
-            Scénarios Open-SOC
+            Scénarios Open-SOC ({socScenarios.length})
           </Link>
+          <a
+            href="https://primemarafa.github.io/Open-Forensics/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block px-3 py-2 rounded-md text-base font-medium text-cyan-400 bg-slate-800/60 border border-cyan-500/30"
+          >
+            Basculer vers Open-Forensics ↗
+          </a>
           <div className="pt-2 border-t border-slate-800 flex justify-between text-xs font-mono text-slate-400">
             <span>Score: {totalScore} pts</span>
             <span>Série: {streak}</span>
