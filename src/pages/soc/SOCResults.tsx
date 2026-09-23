@@ -64,9 +64,9 @@ const SOCResults: React.FC = () => {
       />
 
       {scenario.mitreTechniques && scenario.mitreTechniques.length > 0 && (
-        <div className="mt-8 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-            <span>{t('soc:results.mitre_techniques_covered')}</span>
+        <div className="mt-8 bg-slate-900/60 backdrop-blur-xl rounded-2xl border border-slate-800/80 p-6">
+          <h3 className="text-base font-bold text-slate-200 mb-4 flex items-center gap-2 font-mono">
+            <span>{t('soc:results.mitre_techniques_covered', { defaultValue: 'Tactiques & Techniques MITRE ATT&CK Couvertes' })}</span>
           </h3>
           <div className="flex flex-wrap gap-2">
             {scenario.mitreTechniques.map(tech => (

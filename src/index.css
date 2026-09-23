@@ -3,46 +3,74 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --color-cyber-primary: #00ff88;
-  --color-cyber-secondary: #00ccff;
-  --color-cyber-danger: #ff4444;
-  --color-cyber-warning: #ffbb33;
-  --color-cyber-bg: #0a0e17;
-  --color-cyber-surface: #111827;
+  --color-cyber-primary: #10b981;
+  --color-cyber-secondary: #06b6d4;
+  --color-cyber-danger: #f43f5e;
+  --color-cyber-warning: #f59e0b;
+  --color-cyber-bg: #070a11;
+  --color-cyber-surface: #0f172a;
   --color-cyber-border: #1e293b;
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #070a11;
+  color: #f1f5f9;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.05) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(15, 23, 42, 0.5) 0px, transparent 50%);
+  background-attachment: fixed;
 }
 
-/* Scrollbar styling */
+/* Custom premium scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-cyber-bg);
+  background: rgba(7, 10, 17, 0.8);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-cyber-border);
-  border-radius: 4px;
+  background: rgba(51, 65, 85, 0.6);
+  border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: rgba(16, 185, 129, 0.5);
 }
 
-/* Log viewer styling */
-.log-line:hover {
-  background-color: rgba(0, 255, 136, 0.05);
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.4);
 }
 
-/* Glow effects */
-.glow-green {
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.glow-blue {
-  box-shadow: 0 0 20px rgba(0, 204, 255, 0.15);
+.glass-panel-hover:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.15);
+  transform: translateY(-2px);
 }
-.glow-red {
-  box-shadow: 0 0 20px rgba(255, 68, 68, 0.15);
+
+/* Cyber ambient glows */
+.glow-emerald {
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.2);
+}
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.2);
+}
+.glow-rose {
+  box-shadow: 0 0 25px rgba(244, 63, 94, 0.2);
+}
+
+/* Subtle grid overlay */
+.bg-cyber-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
 }
